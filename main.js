@@ -41,7 +41,7 @@ function setup()
     document.getElementById("status").innerHTML="Object detecting";
     video=createCapture(VIDEO);
     video.hide();
-
+    video.size(380, 380);
     objectdetector=ml5.objectDetector("cocossd", modelLoaded);
 }
 
